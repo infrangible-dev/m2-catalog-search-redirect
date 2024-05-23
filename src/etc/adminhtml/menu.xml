@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!--
+ * @author      Andreas Knollmann
+ * @copyright   Copyright (c) 2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Infrangible_CatalogSearchRedirect::infrangible_catalogsearchredirect" title="Search Redirect" module="Infrangible_CatalogSearchRedirect" sortOrder="950" resource="Infrangible_CatalogSearchRedirect::infrangible_catalogsearchredirect" parent="Infrangible_Foundation::menu"/>
+        <add id="Infrangible_CatalogSearchRedirect::infrangible_catalogsearchredirect_queries" title="Terms" module="Infrangible_CatalogSearchRedirect" sortOrder="10" resource="Infrangible_CatalogSearchRedirect::infrangible_catalogsearchredirect" action="catalog_search_redirect/query/index" parent="Infrangible_CatalogSearchRedirect::infrangible_catalogsearchredirect"/>
+    </menu>
+</config>
