@@ -19,10 +19,9 @@ class Grid
     extends \Infrangible\BackendWidget\Block\Grid
 {
     /**
-     * @return void
      * @throws FileSystemException
      */
-    public function _construct()
+    public function _construct(): void
     {
         parent::_construct();
 
@@ -30,18 +29,14 @@ class Grid
         $this->setDefaultDir(Collection::SORT_ORDER_ASC);
     }
 
-    /**
-     * @param AbstractDb $collection
-     */
-    protected function prepareCollection(AbstractDb $collection)
+    protected function prepareCollection(AbstractDb $collection): void
     {
     }
 
     /**
-     * @return void
      * @throws Exception
      */
-    protected function prepareFields()
+    protected function prepareFields(): void
     {
         $this->addTextColumn('text', __('Term')->render());
         $this->addStoreStructureColumn('store_id');
